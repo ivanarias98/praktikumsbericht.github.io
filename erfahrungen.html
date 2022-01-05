@@ -41,6 +41,46 @@
       <header>
         <h1 style="text-align: center;">Praktikumsbericht</h1>
         <h2 style="text-align: center;">Leibniz-Institut für Deutsche Sprache</h2>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+      <script type="text/javascript">
+      google.charts.load('current', {
+      'packages': ['timeline']
+      });
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+      var container = document.getElementById('timeline');
+      var chart = new google.visualization.Timeline(container);
+      var dataTable = new google.visualization.DataTable();
+
+      dataTable.addColumn({
+        type: 'string',
+        id: 'Tätigkeit'
+      });
+      dataTable.addColumn({
+        type: 'date',
+        id: 'Start'
+      });
+      dataTable.addColumn({
+        type: 'date',
+        id: 'End'
+      });
+      dataTable.addRows([
+        ['Einführung in das Projekt', new Date(2021, 9, 1), new Date(2021, 9, 2)],
+        ['Einlesen von Literatur', new Date(2021, 9, 3), new Date(2021, 9, 24)],
+        ['Erstellung der bei-Strukturmuster', new Date(2021, 9, 6), new Date(2021, 9, 30)],
+        ['Datenerhebung zur Analyse skalarer Bedeutung', new Date(2021, 9, 27), new Date(2021, 10, 12)],
+
+        ['Erstellung der um-Strukturmuster', new Date(2021, 10, 11), new Date(2021, 10, 25)],
+
+        ['Korrekturlesen eines Manuskripts', new Date(2021, 10, 26), new Date(2021, 10, 29)],
+
+      ]);
+
+      chart.draw(dataTable);
+      }
+
+      </script>
       </header>
       <hr>
       <h2 align="center">Verben und Argumentstrukturen</h2>
@@ -52,15 +92,14 @@
       <br>
 
           <p style="text-align: center;"><img src="erfahrungen.png" alt="erfahrung" style="width:80px;"></p>
+      <h3>Wissenschaftliche Erfahrungen im Projekt</h3>
+      <h4>Gantt-Diagramm: zeitliche Abfolge der Aktivitäten</h4>
+              <div id="timeline" style="height: 180px; padding-left: 18px;"></div>
+              <p style="text-align: center; font-size: 10px;"><b>Abbildung 1:</b> Zeitliche Abfolge der Aktivitäten im Rahmen des Projektes (Quelle: eigene Darstellung)</p>
 
-      <h3>Wissenschaftliche Erfahrungen</h3>
-      <p style="text-align: justify;"></p>
+      <p style="text-align: justify;">Stundenplan und Chronogramm</p>
       <h4></h4>
-      <p style="text-align: justify;">
-
-        <h4>Literatur</h4>
-
-      </p>
+      <p style="text-align: justify;">Tätigkeiten, mit denen ich mich auseiandergesetzt habe</p>
 
 
       <footer>
