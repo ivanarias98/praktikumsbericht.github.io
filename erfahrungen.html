@@ -42,30 +42,32 @@
         <h1 style="text-align: center;">Praktikumsbericht</h1>
         <h2 style="text-align: center;">Leibniz-Institut für Deutsche Sprache</h2>
         <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-      <script type="text/javascript">
-      google.charts.load('current', {
-      'packages': ['timeline']
-      });
-      google.charts.setOnLoadCallback(drawChart);
+        <script type="text/javascript">
 
-      function drawChart() {
-      var container = document.getElementById('timeline');
-      var chart = new google.visualization.Timeline(container);
-      var dataTable = new google.visualization.DataTable();
 
-      dataTable.addColumn({
+        google.charts.load('current', {
+        'packages': ['timeline']
+        });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+        var container = document.getElementById('timeline');
+        var chart = new google.visualization.Timeline(container);
+        var dataTable = new google.visualization.DataTable();
+
+        dataTable.addColumn({
         type: 'string',
         id: 'Tätigkeit'
-      });
-      dataTable.addColumn({
+        });
+        dataTable.addColumn({
         type: 'date',
         id: 'Start'
-      });
-      dataTable.addColumn({
+        });
+        dataTable.addColumn({
         type: 'date',
         id: 'End'
-      });
-      dataTable.addRows([
+        });
+        dataTable.addRows([
         ['Einführung in das Projekt', new Date(2021, 8, 1), new Date(2021, 8, 2)],
         ['Einlesen von Literatur', new Date(2021, 8, 3), new Date(2021, 8, 24)],
         ['Erstellung der bei-Strukturmuster', new Date(2021, 8, 6), new Date(2021, 8, 30)],
@@ -75,74 +77,69 @@
 
         ['Korrekturlesen eines Manuskripts', new Date(2021, 9, 26), new Date(2021, 9, 29)],
 
-      ]);
+        ]);
 
-      chart.draw(dataTable);
-      }
+        chart.draw(dataTable);
+        }
 
-      </script>
+        </script>
       </header>
       <hr>
       <h2 align="center">Verben und Argumentstrukturen</h2>
-
-
       <div class="scrollmenu">
         <a href="index.html">Startseite</a> <a href="institution.html">Die Institution</a> <a href="projekt.html">Das Projekt</a> <a href="erfahrungen.html">Erfahrungen</a> <a href="bemerkungen.html">Bemerkungen</a>
-      </div>
-      <br>
-
-          <p style="text-align: center;"><img src="erfahrungen.png" alt="erfahrung" style="width:80px;"></p>
+      </div><br>
+      <p style="text-align: center;"><img src="erfahrungen.png" alt="erfahrung" style="width:80px;"></p>
       <h3>Wissenschaftliche Erfahrungen im Projekt</h3>
-      <p style="text-align: justify;">Die Integration in die Projektarbeit geschah dank der guten internen Organisation erfolgreich. Wegen der Pandemie musste das Praktikum online stattfinden. In diesem Abschnitt stehen die Tätigkeiten, mit denen ich mich auseinandergesetzt habe, im Mittelpunkt. Zunächst sollten einige Aspekte zur Organisation des Praktikums besprochen werden. Wie im <a href="Vertrag.pdf">Vertrag</a> zu lesen ist, absolvierte ich das Pflichtpraktikum im September, obwohl ich  im Oktober im Projekt im Rahmen eines fakultativen Praktikums für mein Studium weiterarbeitete. Im September wurde die tägliche Arbeitszeit auf ungefähr 7 Stunden (ca. 10:00 Uhr-17:00 Uhr) festgelegt und im Oktober arbeitete ich nur auf Teilzeit. Als Arbeitsmittel standen mir eine institutionelle E-Mail und ein VPN des Instituts zur Verfügung, damit ich Zugriff auf all die notwendigen Dokumente sowie auf das Software des Unternehmens haben konnte. In dieser Seite wird beschrieben, an welchen Aktivitäten ich beteiligt war und wie sie abgelaufen sind.</p>
+      <p style="text-align: justify;">Die Integration in die Projektarbeit geschah dank der guten internen Organisation erfolgreich. Wegen der Pandemie musste das Praktikum online stattfinden. In diesem Abschnitt stehen die Tätigkeiten, mit denen ich mich auseinandergesetzt habe, im Mittelpunkt. Zunächst sollten einige Aspekte zur Organisation des Praktikums besprochen werden. Wie im <a href="Vertrag.pdf">Vertrag</a> zu lesen ist, absolvierte ich das Pflichtpraktikum im September, obwohl ich im Oktober im Projekt im Rahmen eines fakultativen Praktikums für mein Studium weiterarbeitete. Im September wurde die tägliche Arbeitszeit auf ungefähr 7 Stunden (ca. 10:00 Uhr-17:00 Uhr) festgelegt und im Oktober arbeitete ich nur auf Teilzeit. Als Arbeitsmittel standen mir eine institutionelle E-Mail und ein VPN des Instituts zur Verfügung, damit ich Zugriff auf all die notwendigen Dokumente sowie auf das Software des Unternehmens haben konnte. In dieser Seite wird beschrieben, an welchen Aktivitäten ich beteiligt war und wie sie abgelaufen sind.</p>
       <h4>Gantt-Diagramm: zeitliche Abfolge der Aktivitäten</h4>
       <p style="text-align: justify;">Zuerst wird auf die zeitliche Abfolge der Aktivitäten eingegangen. Ein Gantt-Diagramm ist ein bekanntes Instrument im Rahmen des Projektmanagements, denn es zeigt aus graphischer Sicht die zeitliche Abfolge von Aktivitäten. Im Gantt-Diagramm werden die Tätigkeiten in die erste Spalte eingetragen und dann kann man in den Zeilen die Zeitachse beobachten. Es gilt in dem Fall als Überblick über die Aktivitäten, mit denen ich mich im Projekt beschäftigt habe.</p>
-              <div id="timeline" style="height: 180px; padding-left: 18px;"></div>
-              <p style="text-align: center; font-size: 10px;"><b>Abbildung 1:</b> Zeitliche Abfolge der Aktivitäten im Rahmen des Projektes (Quelle: eigene Darstellung)</p>
-  <p style="text-align: justify;">Von diesen Aktivitäten wird im Folgenden die Rede sein, indem man jede einzelne Tätigkeit betrachtet. Darüber hinaus haben andere Meetings mit Mitarbeitenden des Projektes stattgefunden, die nicht im Gantt-Diagramm zu sehen sind. Die Meetings fanden auf der Zoom-Plattform statt und dabei wurden Aspekte des Projektes diskutiert. Normalerweise ging es um Richtlinien für Aktivitäten, an denen ich später arbeiten musste. An den Meetings nahmen meine Betreuerin, Dr. Kristel Proost, und ich teil und sie stellten einen wesentlichen Teil meines Praktikums dar, denn ich konnte somit trotz der pandemischen Lage im ständigen Kontakt mit meiner Betreuerin bleiben, um Punkte des Projektes zur Diskussion zu bringen.</p>
+      <div id="timeline" style="height: 180px; padding-left: 18px;"></div>
+      <p style="text-align: center; font-size: 10px;"><b>Abbildung 1:</b> Zeitliche Abfolge der Aktivitäten im Rahmen des Projektes (Quelle: eigene Darstellung)</p>
+      <p style="text-align: justify;">Von diesen Aktivitäten wird im Folgenden die Rede sein, indem man jede einzelne Tätigkeit betrachtet. Darüber hinaus haben andere Meetings mit Mitarbeitenden des Projektes stattgefunden, die nicht im Gantt-Diagramm zu sehen sind. Die Meetings fanden auf der Zoom-Plattform statt und dabei wurden Aspekte des Projektes diskutiert. Normalerweise ging es um Richtlinien für Aktivitäten, an denen ich später arbeiten musste. An den Meetings nahmen meine Betreuerin, Dr. Kristel Proost, und ich teil und sie stellten einen wesentlichen Teil meines Praktikums dar, denn ich konnte somit trotz der pandemischen Lage im ständigen Kontakt mit meiner Betreuerin bleiben, um Punkte des Projektes zur Diskussion zu bringen.</p>
       <h4>Aktivitäten und Erfahrungen im Projekt</h4>
       <p style="text-align: justify;">Die in der ersten Spalte des Gantt-Diagramms genannten Aktivitäten stellten den größten Teil meines Praktikums dar. Deswegen werden die oben erwähnten Tätigkeiten hier eingehend definiert und beschrieben.</p>
       <h5>Einführung in das Projekt</h5>
-      <p style="text-align: justify;">Da ich vor meinem ersten Arbeitstag keine Informationen zu der Organisation und zu meinen Aufgaben im Projekt hatte, traf ich am 1. September meine Betreuerin, damit sie eine Einführung in das Projekt vortragen konnte. Dabei ging es in erster Linie um die Aspekte, mit denen ich mich in der Seite <a href="projekt.html">Projekt</a> bereits befasst habe. Aus theoretischer Sicht wurde mir mitgeteilt, worum es in der Konstruktionsgrammatik und in der Valenzgrammatik geht. Außerdem wurde festgestellt, wie die Vorgehensweise bei der Datenerhebung und -analyse aussieht, damit ich mich dann bald auf die individuelle Arbeit konzentrieren konnte. Wie in den folgenden Abschnitten zu lesen ist, beschränkte sich meine Arbeit vor allem auf die Erhebung und Annotation linguistischer Daten, die dann endgültig zur Artikelerstellung von großer Bedeutung sind. </p>
-
-      <img src="einfuehrung.png" alt="einfuehrung" style="width: 400px; padding-left: 100px;">
+      <p style="text-align: justify;">Da ich vor meinem ersten Arbeitstag keine Informationen zu der Organisation und zu meinen Aufgaben im Projekt hatte, traf ich am 1. September meine Betreuerin, damit sie eine Einführung in das Projekt vortragen konnte. Dabei ging es in erster Linie um die Aspekte, mit denen ich mich in der Seite <a href="projekt.html">Projekt</a> bereits befasst habe. Aus theoretischer Sicht wurde mir mitgeteilt, worum es in der Konstruktionsgrammatik und in der Valenzgrammatik geht. Außerdem wurde festgestellt, wie die Vorgehensweise bei der Datenerhebung und -analyse aussieht, damit ich mich dann bald auf die individuelle Arbeit konzentrieren konnte. Wie in den folgenden Abschnitten zu lesen ist, beschränkte sich meine Arbeit vor allem auf die Erhebung und Annotation linguistischer Daten, die dann endgültig zur Artikelerstellung von großer Bedeutung sind.</p><img src="einfuehrung.png" alt="einfuehrung" style="width: 400px; padding-left: 100px;">
       <p style="text-align: center; font-size: 10px;"><b>Abbildung 2:</b> Präsentation am ersten Arbeitstag (Quelle: Kristel Proost)</p>
-
-            <h5>Einlesen von Literatur</h5>
-<p style="text-align: justify;">Vor einer richtigen Auseinandersetzung mit den Aufgaben meines Praktikums musste ich mich mit der Lektüre von grundlegenden Texten befassen, die teilweise die theoretischen Grundlagen des Projektes darstellen. Das Einlesen von Literatur war eine wichtige Phase meines Praktikums, denn auf diese Weise konnte ich mein Wissen im Bereich der Grammatik und der Lexikographie vertiefen. Darüber hinaus erhielt ich somit Auskunft über die Artikelerstellung, eine Phase, mit der ich mich schließlich nicht befasst habe. Ein Beispiel, das die Theorie verdeutlichen könnte, ist das Argumentstrukturmuster unten. Zu diesem Argumentstrukturmuster gehören laut Zeschel (2019) verschiedene Schemata mit der Präposition <em>vor</em>, wie z.B. <em>sich vor etwas erschrecken</em> oder <em>sich vor etwas fürchten</em>, was in die semantischen Kategorie <em>Bedrohung</em> einzuordnen ist.</p>
-<img src="struktur_vor.png" alt="struktur_vor" style="width: 400px; padding-left: 100px;">
-<p style="text-align: center; font-size: 10px;"><b>Abbildung 3:</b> Darstellung eines <em>vor-</em>Argumentstrukturmusters (Quelle: Zeschel, 2019, S. 46)</p>
-
-            <h5>Erstellung der <em>bei</em>-Strukturmuster</h5>
-
-            <p style="text-align: justify;">Diese praktische Aufgabe diente zur Exemplifizierung der Strukturmuster mit präpositionalen Objekten, deren Kopf die Präposition <em>bei</em> war. Das <em>Wörterbuch deutscher Präpositionen</em> galt als Quelle zur Extraktion der Beispiele und zur Beschreibung der Muster. Diese Aufgabe bestand aus drei Phasen:</p>
-            <ol>
-              <li style="text-align: justify;">Die erste Phase bestand in der Analyse von Mustern, die dann im <em>Wörterbuch deutscher Präpositionen</em> nachgeschlagen werden mussten. Die Muster waren wie folgt formuliert:
-                  <ul>
-                    <li> <em>"jemand blitzt bei jemandem ab"</em></li>
-                    <li> <em>"jemand fragt etwas (Akk.) bei jemandem ab"</em></li>
-                    <li> <em>"jemand guckt etwas (Akk.) bei jemandem ab"</em></li>
-                  </ul>
-              </li>
-              <li style="text-align: justify;">In einer zweiten Phase sollten diese Muster im oben erwähnten Wörterbuch zu Rate gezogen werden, um sie ausführlicher zu annotieren. Folgende Abbildung zeigt, über welche Auskunft das Wörterbuch verfügt:</br>
-                <img src="abblitzen.png" alt="abblitzen" style="width: 300px; padding-left: 150px;">
-                <p style="text-align: center; font-size: 10px;"><b>Abbildung 4:</b> Wörterbuchartikel zum Lemma <em>abblitzen</em> (Quelle: Müller, 2012, S. 7)</p>
-              </li>
-              <li>In der letzten Phase sollte die Information aus dem Wörterbuch extrahiert werden und sie musste in eine Excel-Tabelle wie die folgende eingetragen werden:
-                <img src="excel.png" alt="excel" style="width: 700px; padding-left: 3px;">
-                <p style="text-align: center; font-size: 10px;"><b>Abbildung 5:</b> Excel-Tabelle zu den Mustern von <em>bei</em> (Quelle: eigene Darstellung im Software des Projektes)</p>
-              </li>
-            </ol>
-            <p style="text-align: justify;">In den Zoom-Meetings wurde zu der oben erläuterten Analyse über die semantische Bedeutung der Präpositionalphrasen diskutiert. Es wurde dabei annotiert, ob die Muster eine lokale, temporale, direktionale oder abstrakte Bedeutung hatten. Das galt später zur Differenzierung zwischen den von Projektmitarbeitenden erstellten Mustern und den aus diesem Wörterbuch extrahierten Mustern.</p>
-            <h5>Datenerhebung zur Analyse skalarer Bedeutung</h5>
-            <h5>Erstellung der <em>um</em>-Strukturmuster</h5>
-<h5>Korrekturlesen eines Manuskripts</h5>
-<h4>Schlussfolgerung</h4>
+      <h5>Einlesen von Literatur</h5>
+      <p style="text-align: justify;">Vor einer richtigen Auseinandersetzung mit den Aufgaben meines Praktikums musste ich mich mit der Lektüre von grundlegenden Texten befassen, die teilweise die theoretischen Grundlagen des Projektes darstellen. Das Einlesen von Literatur war eine wichtige Phase meines Praktikums, denn auf diese Weise konnte ich mein Wissen im Bereich der Grammatik und der Lexikographie vertiefen. Darüber hinaus erhielt ich somit Auskunft über die Artikelerstellung, eine Phase, mit der ich mich schließlich nicht befasst habe. Ein Beispiel, das die Theorie verdeutlichen könnte, ist das Argumentstrukturmuster unten. Zu diesem Argumentstrukturmuster gehören laut Zeschel (2019) verschiedene Schemata mit der Präposition <em>vor</em>, wie z.B. <em>sich vor etwas erschrecken</em> oder <em>sich vor etwas fürchten</em>, was in die semantischen Kategorie <em>Bedrohung</em> einzuordnen ist.</p><img src="struktur_vor.png" alt="struktur_vor" style="width: 400px; padding-left: 100px;">
+      <p style="text-align: center; font-size: 10px;"><b>Abbildung 3:</b> Darstellung eines <em>vor-</em>Argumentstrukturmusters (Quelle: Zeschel, 2019, S. 46)</p>
+      <h5>Erstellung der <em>bei</em>-Strukturmuster</h5>
+      <p style="text-align: justify;">Diese praktische Aufgabe diente zur Exemplifizierung der Strukturmuster mit präpositionalen Objekten, deren Kopf die Präposition <em>bei</em> war. Das <em>Wörterbuch deutscher Präpositionen</em> galt als Quelle zur Extraktion der Beispiele und zur Beschreibung der Muster. Diese Aufgabe bestand aus drei Phasen:</p>
+      <ol>
+        <li style="text-align: justify;">Die erste Phase bestand in der Analyse von Mustern, die dann im <em>Wörterbuch deutscher Präpositionen</em> nachgeschlagen werden mussten. Die Muster waren wie folgt formuliert:
+          <ul>
+            <li><em>jemand blitzt bei jemandem ab</em></li>
+            <li><em>jemand fragt etwas (Akk.) bei jemandem ab</em></li>
+            <li><em>jemand guckt etwas (Akk.) bei jemandem ab</em></li>
+          </ul>
+        </li>
+        <li style="text-align: justify;">In einer zweiten Phase sollten diese Muster im oben erwähnten Wörterbuch zu Rate gezogen werden, um sie ausführlicher zu annotieren. Folgende Abbildung zeigt, über welche Auskunft das Wörterbuch verfügt:<br>
+          <img src="abblitzen.png" alt="abblitzen" style="width: 300px; padding-left: 150px;">
+          <p style="text-align: center; font-size: 10px;"><b>Abbildung 4:</b> Wörterbuchartikel zum Lemma <em>abblitzen</em> (Quelle: Müller, 2012, S. 7)</p>
+        </li>
+        <li>In der letzten Phase sollte die Information aus dem Wörterbuch extrahiert werden und sie musste in eine Excel-Tabelle wie die folgende eingetragen werden: <img src="excel.png" alt="excel" style="width: 700px; padding-left: 3px;">
+          <p style="text-align: center; font-size: 10px;"><b>Abbildung 5:</b> Excel-Tabelle zu den Mustern von <em>bei</em> (Quelle: eigene Darstellung im Software des Projektes)</p>
+        </li>
+      </ol>
+      <p style="text-align: justify;">In den Zoom-Meetings wurde zu der oben erläuterten Analyse über die semantische Bedeutung der Präpositionalphrasen diskutiert. Es wurde dabei annotiert, ob die Muster eine lokale, temporale, direktionale oder abstrakte Bedeutung hatten. Das galt später zur Differenzierung zwischen den von Projektmitarbeitenden erstellten Mustern und den aus diesem Wörterbuch extrahierten Mustern.</p>
+      <h5>Datenerhebung zur Analyse skalarer Bedeutung</h5>
+      <p style="text-align: justify;">Diese Aufgabe steht in Zusammenhang mit der Analyse skalarer Bedeutung. In Anlehnung an Kristel (2019, S. 109) greift die skalare Bedeutung darauf zurück, dass „jemand oder etwas [nimmt] auf einer Skala mit distinkten Werten eine höhere Position als jemand anders/etwas anderes ein“. Zur Analyse skalarer Bedeutungen mussten mehr als 10000 Belege jeweils aus dem Korpus des IDS DeReKo durchgelesen werden. Extrahiert wurden lediglich die Beispiele, in denen ein Rangordnungverhältnis zu beobachten war. Die Suche im Korpus DeReKo erfolgt nun mit einer <em>Query</em>, dank der man nur Belege mit folgenden Präpositionen als Kopf einer Präpositionalphrase erhält: <em>nach</em>, <em>vor</em>, <em>über</em> und <em>hinter</em>. Der Untersuchungsgegenstand bestand darin, dass man herausfinden wollte, ob die Prädikate mit Präpositionalphrasen, die durch <em>nach</em> und <em>vor</em> eingeleitet sind, oder die Prädikate mit Präpositionalobjekten mit <em>über</em> oder <em>hinter</em> jeweils antonymisch sind.</p>
+      <p style="text-align: justify;">Die extrahierten Daten wurden in eine Excel-Tabelle eingetragen, in der man die skalare Beziehung zwischen zwei Entitäten berücksichtigen kann. Folgende Abbildung zeigt, wie die Prädikate mit Objekten, die skalare Bedeutung aufweisen, markiert werden sollten.</p><img src="excel_rang.png" alt="excel_rang" style="width: 700px; padding-left: 3px;">
+      <p style="text-align: center; font-size: 10px;"><b>Abbildung 6:</b> Excel-Tabelle zur skalaren Bedeutung mit der Präposition <em>hinter</em> (Quelle: eigene Darstellung im Software des Projektes)</p>
+      <p style="text-align: justify;">Beispiele wie <em>der Gegenspieler <b style="color: red;">liegt</b> 26 Punkte hinter Karsai</em> verdeutlichen, dass es zwei Entitäten (A: <em>der Gegenspieler</em> und B: <em>Karsai</em>) gibt, deren Beziehung skalar ist, bei der A auf einer Skala <em>hinter</em> B liegt. Diese Vorgehensweise wurde bei den vier oben erwähnten Präpositionen umgesetzt, um die skalare Bedeutung zu analysieren.</p>
+      <h5>Erstellung der <em>um</em>-Strukturmuster</h5>
+      <p style="text-align: justify;">Diese Aufgabe galt zur Exemplifizierung der Strukturmuster mit präpositionalen Phrasen, die durch die Präposition <em>um</em> eingeleitet waren. Das <em>Wörterbuch deutscher Präpositionen</em> wurde als Quelle zur Extraktion der Beispiele und zur Etablierung der Argumentstrukturen verwendet. Die drei Phasen, die bei der Aufgabe der Erstellung der <em>bei</em>-Strukturmuster beschieben wurden, spielten auch hier eine grundlegende Rolle, denn es musste wieder auf diese drei Stufen eingehen. Die formulierten Muster wurden im Wörterbuch von Müller zu Rate gezogen, damit die spätere Annotation in der Excel-Tabelle möglich wurde. Der einzige Unterschied zwischen der Erstellung der <em>bei</em>- und der <em>um</em>-Strukturmuster lag daran, dass man eine unterschiedliche Anzahl von Belegen hatte. Die Aufzeichnung der <em>um</em>-Strukturmuster verfügte über 528 Belege, solange man 633 Belegsätze mit <em>bei</em>-Präpositionalphrasen hatte.</p>
+      <h5>Korrekturlesen eines Manuskripts</h5>
+      <p style="text-align: justify;">Dass meine Betreuerin, Dr. Kristel Proost, am Verfassen eines Beitrags für eine wissenschaftliche linguistische Zeitschrift zur Zeit meines Praktikums arbeitete, führt dazu, dass ich den Artikel Korrektur las. Im Manuskript ging es in erster Linie um die Exemplifizierung und Analyse skalarer Bedeutung mit den Präpositionen <em>vor</em>, <em>nach</em>, <em>unter</em> und <em>hinter</em>. Die Datenerhebung erfolgte teilweise innerhalb der Aufgabe, von der hier früher die Rede war. Die Extraktion von linguistischen Daten aus dem Korpus DeReKo leistete einen großen Beitrag zur Endversion des Manuskripts. </p>
+      <h4>Schlussfolgerung</h4>
       <footer>
         <hr>
-        <p style="text-align: justify; font-size: 10px; "><em>Diese Webseite wurde mit <a href="https://pages.github.com/"><b>GitHub Pages</b></a> erstellt.</em></p>
+        <p style="text-align: justify; font-size: 10px;"><em>Diese Webseite wurde mit <a href="https://pages.github.com/"><b>GitHub Pages</b></a> erstellt.</em></p>
         <p style="text-align: center; color: black; font-size: 14px;">vorgelegt von <b>Ivan Arias</b> <a href="https://www.linkedin.com/in/ivan-arias-arias/"><img src="linkedin.png" alt="LinkedIn" style="width: 30px;"></a> <a href="mailto:%20pg43586@alunos.uminho.pt" style="font-size: 12px;">[pg43586@alunos.uminho.pt]</a></p>
-      <p style="text-align: center; color: black; font-size: 14px;">Europäischer Master für Lexikographie · Universidade do Minho</p>
-      <p style="text-align: center; color: black; font-size: 14px;">Vertiefungsmodul 3: Praktikum · betreut von <a href="https://perso.ids-mannheim.de//seiten/proost.html">Dr. Kristel Proost</a></p><br>
+        <p style="text-align: center; color: black; font-size: 14px;">Europäischer Master für Lexikographie · Universidade do Minho</p>
+        <p style="text-align: center; color: black; font-size: 14px;">Vertiefungsmodul 3: Praktikum · betreut von <a href="https://perso.ids-mannheim.de//seiten/proost.html">Dr. Kristel Proost</a></p><br>
       </footer>
     </div>
   </div>
